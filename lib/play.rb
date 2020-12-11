@@ -53,4 +53,4 @@ def play(board)
   else draw?(board)
     puts "Cat\'s Game!"
   end
-end# Define your play method below
+end
