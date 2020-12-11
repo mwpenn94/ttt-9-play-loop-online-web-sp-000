@@ -9,4 +9,4 @@ display_board(board)
 play(board)
 input = gets.strip
 index = input_to_index(input)
-move(board, index, "X")# Make sure to execute #play below
+
