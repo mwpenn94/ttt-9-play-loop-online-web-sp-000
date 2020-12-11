@@ -35,4 +35,22 @@ def turn(board)
   end
 end
 
-# Define your play method below
+def play(board)
+  counter = 0
+  until counter == 9
+  turn(board)
+  counter += 1
+  end
+end
+
+def play(board)
+  until over?(board)
+    turn(board) 
+  end
+  if won?(board)
+    winner(board) == "X" || winner(board) == "O"
+    puts "Congratulations #{winner(board)}!"
+  else draw?(board)
+    puts "Cat\'s Game!"
+  end
+end# Define your play method below
